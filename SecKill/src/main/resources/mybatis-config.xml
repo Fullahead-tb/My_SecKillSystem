@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+        <settings>
+<!--            获取自增主键-->
+            <setting name="useGeneratedKeys" value="true"></setting>
+
+
+            <setting name="mapUnderscoreToCamelCase" value="true"></setting>
+
+        </settings>
+
+    <!--    <settings>-->
+    <!--        &lt;!&ndash;        开启延迟加载的机制 关联的对象可以延迟加载&ndash;&gt;-->
+    <!--        <setting name="lazyLoadingEnabled" value="true"></setting>-->
+    <!--        &lt;!&ndash;            关闭对象的侵略性 不用就不需要加载 用到了关联对象的任意属性 就加载&ndash;&gt;-->
+    <!--        <setting name="aggressiveLazyLoading" value="false"></setting>-->
+    <!--    </settings>-->
+    <!--    <environments default="development">-->
+    <!--        <environment id="development">-->
+    <!--            <transactionManager type="JDBC"></transactionManager>-->
+    <!--            <dataSource type="POOLED">-->
+    <!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+    <!--                <property name="url" value="jdbc:mysql://localhost:3306/testmybatis?serverTimezone=UTC&amp;useSSL=false&amp;characterEncoding=utf8"/>-->
+    <!--                <property name="username" value="root"/>-->
+    <!--                <property name="password" value="root"/>-->
+    <!--            </dataSource>-->
+    <!--        </environment>-->
+    <!--    </environments>-->
+    <mappers>
+        <mapper class="com.hai.dao.UserDao"></mapper>
+        <mapper class="com.hai.dao.SecKillItemDao"></mapper>
+    </mappers>
+</configuration>
